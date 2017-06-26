@@ -1,0 +1,30 @@
+{
+  "name": "beachfront-api",
+  "version": "1.0.0",
+  "description": "A simple module for accessing beachfront's report data.",
+  "main": "index.js",
+  "scripts": {
+    "test": "standard"
+  },
+  "keywords": ["beachfront"],
+  "author": "Ryan Loomba <ryan@loomba.io> ",
+  "license": "MIT",
+  "dependencies": {
+    "jsonist": "^1.3.0"
+  },
+  "devDependencies": {
+    "standard": "^5.4.1"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rloomba/beachfront-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rloomba/beachfront-api/issues"
+  },
+  "homepage": "https://github.com/rloomba/beachfront-api#readme"
+}
+
