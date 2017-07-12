@@ -16,7 +16,7 @@ module.exports = function (token, data, cb) {
       return cb(new Error(['statusCode', res.statusCode, url].join(' ')))
     }
 
-    var rows = (body || {})
-    cb(null, rows)
+    var response = (body || {})
+    cb(null, response)
   })
 }
