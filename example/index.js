@@ -3,13 +3,15 @@ var bf = require('../')
 var creds = require('./creds.json')
 
 var data = {
-  keys: ["publisher"],
+  keys: ["inventory"],
   metrics: ["impressions", "clicks", "requests", "revenue"],
-  fromDate: "2017-06-01",
-  toDate: "2017-06-23"
+  fromDate: "2017-07-04",
+  toDate: "2017-07-04"
 }
 
-bf(creds.token, data, function (err, rows) {
+bf(creds.token, data, function (err, data) {
   if (err) return console.error(err)
-  console.log('rows', rows)
+  console.log('rows', data.data)
+  console.log('columns', data.columns)
+  console.log('status', data.status)
 })
